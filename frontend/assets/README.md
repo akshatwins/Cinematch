@@ -1,0 +1,1 @@
+TMDB posters/backdrops are loaded dynamically from TMDB. Do not commit copyrighted movie artwork unless you have the rights/license to redistribute it.
