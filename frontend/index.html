@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="CineMatch — live movie discovery and intelligent recommendations.">
+<title>CineMatch — Movie Discovery</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<header class="nav">
+  <div class="logo"><span>●</span> CineMatch</div>
+  <nav><a href="#discover">Discover</a><a href="#about">About</a><a href="/docs" target="_blank">API</a></nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">LIVE MOVIE DISCOVERY</div>
+    <h1>Your next<br><em>great watch.</em></h1>
+    <p>Explore live movie metadata and discover films ranked by story, genre, cast, director, ratings and popularity.</p>
+    <div class="searchbox"><span>⌕</span><input id="q" placeholder="Search movies..." /></div>
+  </div>
+  <div class="hero-art">
+    <div class="poster-stack one"></div><div class="poster-stack two"></div><div class="poster-stack three"></div>
+  </div>
+</section>
+
+<section id="discover">
+  <div class="toolbar">
+    <div><div class="eyebrow">DISCOVER</div><h2>Popular right now</h2></div>
+    <div class="filters">
+      <select id="genre"><option value="">All genres</option></select>
+      <select id="rating"><option value="0">Any rating</option><option value="8">8+</option><option value="7">7+</option></select>
+    </div>
+  </div>
+  <div id="grid" class="grid"></div>
+</section>
+
+<section id="detail" class="detail hidden"></section>
+<section id="recs" class="recs hidden"><div class="eyebrow">PERSONALIZED SIGNAL</div><h2>Because you might like this</h2><div id="recgrid" class="grid"></div></section>
+
+<section id="about" class="about">
+  <div class="eyebrow">ABOUT THE DATA</div>
+  <h2>Powered by TMDB</h2>
+  <p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+  <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">Visit TMDB ↗</a>
+</section>
+</main>
+
+<footer>CineMatch V2 • Production-oriented portfolio project • Movie data & images provided by TMDB</footer>
+<script src="/static/app.js"></script>
+</body>
+</html>
